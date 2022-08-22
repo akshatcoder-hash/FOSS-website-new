@@ -780,6 +780,10 @@ body.nav-opened .nav {
     */
 }
 
+.blog-logo:hover{
+  color: #00FF00;
+}
+
 .menu-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
