@@ -488,7 +488,65 @@ body.nav-opened .site-wrapper {
             transition: transform 0.3s ease;
 }
 
-
+.controlls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .controlls .active-btn {
+    background-color: var(--color-secondary) !important;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .controlls .active-btn i {
+    color: var(--color-white) !important;
+  }
+  
+  .controlls .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: .7rem 0;
+    -webkit-box-shadow: var(--box-shadow-1);
+            box-shadow: var(--box-shadow-1);
+  }
+  
+  .controlls .control i {
+    font-size: 1.2rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
+  }
+  
 /* ==========================================================================
    4. General - The main styles for the the theme
    ========================================================================== */
