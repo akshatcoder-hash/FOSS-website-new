@@ -1463,8 +1463,8 @@ body:not(.post-template) .post-title {
     text-align: center;
     text-decoration: none;
     color: rgba(255,255,255,0.7);
-    -webkit-animation: bounce 4s 2s infinite;
-    animation: bounce 4s 2s infinite;
+    /*-webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;*/
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 6px 12px;
@@ -1673,11 +1673,13 @@ body:not(.post-template) .post-title {
 
     .blog-logo {
         padding: 5px;
+        height: 150px;
+        width: 150px;
     }
 
     .blog-logo img {
-        height: 70px;
-        width: 70px;
+        height: 150px;
+        width: 150px;
     }
 
     .menu-button {
