@@ -516,6 +516,7 @@ body.nav-opened .site-wrapper {
 .main-nav {
     position: relative;
     padding: 35px 40px;
+    margin-top: 10%;
     margin: 0 0 100px 0;
 }
 
@@ -530,7 +531,7 @@ body.nav-opened .site-wrapper {
 .navbar {
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 2rem;
   position: fixed;
@@ -540,11 +541,12 @@ body.nav-opened .site-wrapper {
 .navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 1.5% auto;
   padding: 0 50px;
   float: right;
 }
@@ -912,8 +914,10 @@ body.nav-opened .menu-button .word {
 
 .main-nav.overlay a:hover {
     color: #222;
-    border-color: #fff;
-    background: #fff;
+    /* border-color: #fff; */
+    /* background: #fff; */
+    color: #00e043;
+  transition: all 0.3s ease;
 }
 
 /* Add a border to the buttons on hover */
@@ -930,8 +934,9 @@ body.nav-opened .menu-button .word {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+    display: inline-block;
 }
-.page-title:hover{
+.page-title a:hover{
   color:#00FF00;
 }
 .page-description {
@@ -957,7 +962,9 @@ body.nav-opened .menu-button .word {
 .no-cover .page-description {
     color: rgba(0,0,0,0.5);
 }
-
+.random{
+    display: inline-block;
+}
 .no-cover .main-nav.overlay .menu-button {
     color: rgba(0,0,0,0.4);
     border-color: rgba(0,0,0,0.3);
@@ -1615,6 +1622,7 @@ body:not(.post-template) .post-title {
         font-size: 4rem;
         letter-spacing: -1px;
         color: #bfc8cd;
+        padding: 10px;
     }
 
     .page-title:hover{
@@ -2107,6 +2115,9 @@ canvas {
 
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+nav .fas {
+    display: none;
 }
 
 
