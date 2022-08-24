@@ -967,6 +967,11 @@
        color: rgba(0,0,0,0.4);
        border-color: rgba(0,0,0,0.3);
    }
+   .fcol{
+    color: rgba(255, 255, 255, 0.578);
+    margin-top: 30%;
+   }
+
    
    /* Add subtle load-in animation for content on the home page */
    .home-template .page-title {
