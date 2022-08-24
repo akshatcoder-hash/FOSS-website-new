@@ -965,6 +965,10 @@ body.nav-opened .menu-button .word {
 .random{
     display: inline-block;
 }
+.fcol{
+    color: rgba(255, 255, 255, 0.578);
+    margin-top: 30%;
+}
 .no-cover .main-nav.overlay .menu-button {
     color: rgba(0,0,0,0.4);
     border-color: rgba(0,0,0,0.3);
