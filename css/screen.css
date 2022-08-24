@@ -527,8 +527,8 @@ body.nav-opened .site-wrapper {
 .navbar {
   height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   font-size: 1.5rem;
   position: fixed;
   top: 0;
@@ -546,7 +546,7 @@ body.nav-opened .site-wrapper {
 }
 .navbar__menu {
   display: flex;
-  align-items: center;
+  align-items: right;
   list-style: none;
 }
 
@@ -556,8 +556,8 @@ body.nav-opened .site-wrapper {
 
 .navbar__links {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   width: 125px;
   text-decoration: none;
   height: 100%;
@@ -566,8 +566,8 @@ body.nav-opened .site-wrapper {
 
 .navbar__btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   padding: 0 1rem;
   width: 100%;
 }
