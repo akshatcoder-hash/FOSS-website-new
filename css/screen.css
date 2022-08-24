@@ -468,6 +468,9 @@ margin on the iframe, cause it breaks stuff. */
     display: table-cell;
     vertical-align: middle;
 }
+.vertical h1:hover{
+  color: #00FF00;
+}
 
 /* Wraps the main content & footer */
 .site-wrapper {
@@ -527,9 +530,9 @@ body.nav-opened .site-wrapper {
 .navbar {
   height: 80px;
   display: flex;
-  justify-content: right;
-  align-items: right;
-  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -543,10 +546,11 @@ body.nav-opened .site-wrapper {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
+  float: right;
 }
 .navbar__menu {
   display: flex;
-  align-items: right;
+  align-items: center;
   list-style: none;
 }
 
@@ -556,17 +560,18 @@ body.nav-opened .site-wrapper {
 
 .navbar__links {
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   width: 125px;
   text-decoration: none;
   height: 100%;
   transition: all 0.3s ease;
+  color:rgba(255,255,255,0.7);
 }
 
 .navbar__btn {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: right;
   padding: 0 1rem;
   width: 100%;
@@ -593,7 +598,7 @@ body.nav-opened .nav-cover {
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    background: rgba(0,0,0,0.15);
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -604,7 +609,8 @@ body.nav-opened .nav-cover {
 font-family: "Open Sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 font-weight: 700;
 font-size: 11px;
-color: #909090;
+color: rgba(255,255,255,0.7);
+background: rgba(0, 0, 0, 0.39);
 }
 
 body.nav-closed .nav {
@@ -925,7 +931,9 @@ body.nav-opened .menu-button .word {
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
-
+.page-title:hover{
+  color:#00FF00;
+}
 .page-description {
     margin: 0;
     font-size: 2rem;
