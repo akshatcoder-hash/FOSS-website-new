@@ -587,9 +587,9 @@
      align-items: center;
      justify-content: center;
      width: 20rem;
-     margin-top: 2rem;
+     margin-top: 2.5rem;
      text-decoration: none;
-     height: 3.6rem;
+     height: 3.1rem;
      transition: all 0.3s ease;
      color:rgba(255,255,255,0.7);
    }   
