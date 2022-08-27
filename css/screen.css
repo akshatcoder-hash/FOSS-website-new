@@ -562,9 +562,10 @@
         /* margin-top: 30em; */
         max-width: 100%;
         align-items: center;
-        display: inline-flex;
+        display: flex;
         flex: 100;
         justify-content: center;
+        list-style: none
    };
 }
    
@@ -1076,6 +1077,9 @@
        line-height: 1.7em;
    }
    
+   iframe{
+    position: relative;
+}
    .read-more {
        text-decoration: none;
    }
