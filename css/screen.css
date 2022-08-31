@@ -23,6 +23,8 @@
    ========================================================================== */
   *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
    article, aside, details,
    figcaption, figure,
@@ -510,27 +512,26 @@
        background-size: cover;
        overflow: hidden;
    }
-   
    .main-header .inner {
        width: 80%;
    }
    
-   .main-nav {
+   /* .main-nav {
        position: relative;
        padding: 35px 40px;
        margin-top: 10%;
        margin: 0 0 100px 0;
-   }
+   } */
    
-   .main-nav a {
+   /* .main-nav a {
        text-decoration: none;
        font-family: 'Open Sans', sans-serif;
-   }
+   } */
    /*About Section*/
    
    /* Navigation */
    
-   .navbar {
+   nav .navbar {
      height: 80px;
      display: flex;
      justify-content: space-between;
@@ -544,7 +545,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     height: 80px;
+     height: 800px;
      z-index: 1;
      width: 100%;
      max-width: 1300px;
@@ -554,12 +555,31 @@
    }
    .navbar__menu {
      display: flex;
+     justify-content: space-between;
+     text-align: center;
+     width: ;
      align-items: center;
      list-style: none;
    }
-   @media(max-width: 868px){
+   @media(max-width: 1137px){
+    .navbar__menu :nth-child(7){display: none;}
+   }
+   @media(max-width: 889px){
+    .navbar__menu :nth-child(6){display: none;}
+   }
+   @media(max-width: 750px){
+    .navbar__menu :nth-child(5){display: none;}
+   }
+   @media(max-width: 590px){
+    .navbar__menu :nth-child(4){display: none;}
+   }
+   @media(max-width: 450px){
+    .navbar__menu :nth-child(3){margin-top: 80px; margin-left: -126px; display: block;}
+   } 
+
+   /* @media(max-width: 868px){
     .navbar__menu{
-        /* margin-top: 30em; */
+         margin-top: 30em; 
         max-width: 100%;
         align-items: center;
         display: flex;
@@ -567,15 +587,19 @@
         justify-content: center;
         list-style: none
    };
-}
+} */
    
    .navbar__item {
      height: 80px;
+
    }
    
    .navbar__links {
+    /* padding: 0;
+    margin: 0; */
      display: flex;
      align-items: center;
+     position: relative;
      justify-content: center;
      width: 125px;
      text-decoration: none;
@@ -588,6 +612,7 @@
      align-items: center;
      justify-content: center;
      width: 20rem;
+     position: relative;
      margin-top: 2.5rem;
      text-decoration: none;
      height: 3.1rem;
