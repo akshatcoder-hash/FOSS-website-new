@@ -4,9 +4,11 @@
     font-family: Merriweather;
 }
 .main-header{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: black;
+    z-index: 2;
 }
 .main-nav{
     display: flex;
@@ -95,3 +97,11 @@
     text-align: center;
     padding: 10px;
 }
+.page-title.do{
+    display: none;
+}
+
+/* 
+=====================================================================================================================
+old stuff
+===================================================================================================================== */
