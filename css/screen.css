@@ -18,7 +18,7 @@
     /* overflow: hidden; */
 }
 
-.page-title {
+/* .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
@@ -26,7 +26,7 @@
     font-family: "Open Sans", sans-serif;
     color: #fff;
     display: inline-block;
-}
+} */
 
 .main-nav{
     display: flex;
