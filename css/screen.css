@@ -1596,7 +1596,11 @@
        width: 45%;
        float: left;
    }
-   
+   .cr{
+    display: inline-block;
+    text-align: end;
+
+   }
    .btn-bootstrap-2 {
        /* display: block; */
        /* position: absolute; */
@@ -1646,8 +1650,7 @@
     width: 100%;
     font-family: "Poppins", sans-serif;
     place-items: center;
-    background: linear-gradient(315deg, #ffffff, #d7e1ec);
-   }
+    background: #0b2230;   }
    .wrapper {
                 display: inline-flex;
                 list-style: none;
@@ -1719,6 +1722,12 @@
     .wrapper .github:hover .tooltip,
     .wrapper .github:hover .tooltip::before{
         background: #333333;
+        color: #ffffff;
+    }
+    .wrapper .linkedin-square:hover,
+    .wrapper .linkedin-square:hover .tooltip,
+    .wrapper .linkedin-square:hover .tooltip::before{
+        background: cornflowerblue;
         color: #ffffff;
     }
    
