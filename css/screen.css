@@ -6,11 +6,26 @@
     font-family: Merriweather;
 }
 /* styling main-header */
-.main-header{
-    position: relative;
+.main-header {
+    /*position: relative;*/
+    display: table;
     width: 100%;
     height: 100vh;
-    z-index:2;
+    /* margin-bottom: 5rem; */
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.page-title {
+    margin: 10px 0 10px 0;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    display: inline-block;
 }
 
 .main-nav{
@@ -80,9 +95,7 @@ body.nav-opened .nav-cover {
     .main-nav .navbar__menu.active{
         display: flex;
     }
-   .navbar__linksw3{
-    display: none;
-   }
+   
 }
 .vertical{
     display: flex;
@@ -102,6 +115,7 @@ body.nav-opened .nav-cover {
     gap: 2em;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .vertical a{
     text-decoration: none;
@@ -113,7 +127,10 @@ body.nav-opened .nav-cover {
 .page-title.do{
     display: none;
 }
-
+.page-title a{
+    font-size: 40px;
+    text-align: center;
+}
 /* 
 =====================================================================================================================
 old stuff
@@ -139,10 +156,11 @@ old stuff
 .site-footer a:hover {
     color: #50585D;
 }
-canvas {
+/* canvas {
     display: block;
     vertical-align: bottom;
-  }
+
+  } */
   /* ---- particles.js container ---- */
   
   #particles-js {
@@ -154,7 +172,8 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: 1;
+    /* z-index: 1;
+    opacity: .5; */
   }
   /* ---- stats.js ---- */
   
@@ -433,10 +452,36 @@ canvas {
         transform: translateY(0);
     }
 }
+@media screen and (max-width:560px){
+    .page-title a{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:500px){
+    .page-title a{
+        font-size: 30px;
+    }
+}
 
-
-
-
+@media screen and (max-width:400px){
+    .page-title a{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:350px){
+    .page-title a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:285px){
+    .page-title a{
+        font-size: 15px;
+        
+    }
+    .navbar__linksw3{
+        display: none;
+       }
+}
 
 
 
