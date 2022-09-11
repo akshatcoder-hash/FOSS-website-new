@@ -1564,13 +1564,14 @@
    
    .site-footer {
        position: relative;
-       margin: 8rem 0 0 0;
+       margin: 0rem 0 0 0;
        padding: 0.5rem 15px;
        border-top: #EBF2F6 1px solid;
        font-family: "Open Sans", sans-serif;
        font-size: 1rem;
        line-height: 1.75em;
        color: #BBC7CC;
+       background: #ffffff;
    }
    
    .site-footer a {
@@ -1638,6 +1639,88 @@
        opacity: 0.7;
        color: rgba(255,255,255,0.7);
    }
+   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+   .smh{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+   }
+   .wrapper {
+                display: inline-flex;
+                list-style: none;
+   }
+   .wrapper .icon{
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   }
+   .wrapper .tooltip{
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .wrapper .tooltip::before{
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #ffffff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .wrapper .icon:hover .tooltip{
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .wrapper .icon:hover a,
+    .wrapper .icon:hover .tooltip{
+        text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+    }
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before{
+        background: #1DA1F2;
+        color: #ffffff;
+    }
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before{
+        background:#E4405F;
+        color: #ffffff;
+    }
+    .wrapper .github:hover,
+    .wrapper .github:hover .tooltip,
+    .wrapper .github:hover .tooltip::before{
+        background: #333333;
+        color: #ffffff;
+    }
    
    /* ==========================================================================
       10. Media Queries - Smaller than 900px
@@ -2194,4 +2277,5 @@
    nav .fas {
        display: none;
    }
-   
+  
+ 
