@@ -45,9 +45,7 @@ body.nav-opened .nav-cover {
     color: #3ca33b;
 }
 @media screen and (max-width:815px) {
-    .main-nav .navbar__menu{
-        display: none;
-    }
+   
     .navbar__toggle{
         position: absolute;
         top: 21px;
@@ -69,6 +67,7 @@ body.nav-opened .nav-cover {
         align-items: flex-start;
     }
     .main-nav .navbar__menu{
+        display: none;
         flex-direction: column;
         width: 100%;
 
