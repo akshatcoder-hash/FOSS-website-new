@@ -166,6 +166,7 @@ canvas {
     padding-bottom: 2px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
+    border-radius: 0 0 3px 3px;
   }
   
   .js-count-particles {
@@ -182,10 +183,6 @@ canvas {
   #stats {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
-  }
-  
-  .count-particles {
-    border-radius: 0 0 3px 3px;
   }
  
   body {
