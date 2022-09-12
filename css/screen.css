@@ -209,7 +209,7 @@
        -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
        color: #2E2E2E;
        line-height: 1.15em;
-       margin: 0 0 0.4em 0;
+       margin: 0 0 0.4em;
    
        font-family: "Open Sans", sans-serif;
        text-rendering: geometricPrecision;
@@ -255,7 +255,7 @@
        -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
        -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
        -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-       margin: 0 0 1.75em 0;
+       margin: 0 0 1.75em;
        text-rendering: geometricPrecision;
    }
    
@@ -265,7 +265,7 @@
    
    ol ol, ul ul,
    ul ol, ol ul {
-       margin: 0 0 0.4em 0;
+       margin: 0 0 0.4em;
        padding-left: 2em;
    }
    
@@ -348,7 +348,7 @@
    pre {
        -moz-box-sizing: border-box;
        box-sizing: border-box;
-       margin: 0 0 1.75em 0;
+       margin: 0 0 1.75em;
        border: #E3EDF3 1px solid;
        width: 100%;
        padding: 10px;
@@ -980,7 +980,7 @@
    
    /* The details of your blog. Defined in ghost/settings/ */
    .page-title {
-       margin: 10px 0 10px 0;
+       margin: 10px 0;
        font-size: 5rem;
        letter-spacing: -1px;
        font-weight: 700;
@@ -1127,7 +1127,7 @@
    }
    
    .post-excerpt p {
-       margin: 1em 0 1em 0;
+       margin: 1em 0;
        font-size: 0.9em;
        line-height: 1.7em;
    }
@@ -1141,7 +1141,7 @@
    
    .post-meta {
        display: block;
-       margin: 1.75rem 0 0 0;
+       margin: 1.75rem 0 0;
        font-family: "Open Sans", sans-serif;
        font-size: 1.5rem;
        line-height: 2.2rem;
@@ -1203,7 +1203,7 @@
        position: absolute;
        top: 0;
        right: 0;
-       padding: 4.3rem 0 4rem 0;
+       padding: 4.3rem 0 4rem;
        text-align: right;
    }
    
@@ -1277,8 +1277,8 @@
    /* The author credit area after the post */
    .post-footer {
        position: relative;
-       margin: 6rem 0 0 0;
-       padding: 6rem 0 0 0;
+       margin: 6rem 0 0;
+       padding: 6rem 0 0;
        border-top: #EBF2F6 1px solid;
    }
    
@@ -1382,7 +1382,7 @@
    }
    
    .author-profile {
-       padding: 0 15px 5rem 15px;
+       padding: 0 15px 5rem;
        border-bottom: #EBF2F6 1px solid;
        text-align: center;
    }
@@ -1439,7 +1439,7 @@
        width: 120px;
        height: 120px;
        padding: 3px;
-       margin: -100px auto 0 auto;
+       margin: -100px auto 0;
        box-shadow: none;
    }
    
@@ -1594,7 +1594,7 @@
    
    .site-footer {
        position: relative;
-       margin: 8rem 0 0 0;
+       margin: 8rem 0 0;
        padding: 0.5rem 15px;
        border-top: #EBF2F6 1px solid;
        font-family: "Open Sans", sans-serif;
@@ -1680,7 +1680,7 @@
        }*/
    
        header.post-header {
-           padding: 20px 20px 0 20px;
+           padding: 20px 20px 0;
        }
        section.post-content {
            padding: 20px;
@@ -1714,7 +1714,7 @@
        }
    
        h2.post-title {
-           padding:20px 20px 0px 20px;
+           padding:20px 20px 0px;
        }
    
        .blog-logo img {
@@ -1951,7 +1951,7 @@
    
        p, ul, ol, dl {
            font-size: 0.95em;
-           margin: 0 0 2.5rem 0;
+           margin: 0 0 2.5rem;
        }
    
        .page-title {
@@ -1968,7 +1968,7 @@
    
        h1, h2, h3,
        h4, h5, h6 {
-           margin: 0 0 0.3em 0;
+           margin: 0 0 0.3em;
        }
    
        h1 {
@@ -1979,7 +1979,7 @@
        h2 {
            font-size: 2.4rem;
            letter-spacing: 0;
-           margin: 1em 0 1em 0;
+           margin: 1em 0;
        }
    
        h3 {
@@ -2024,13 +2024,13 @@
        }
    
        .post-footer {
-           padding: 5rem 0 3rem 0;
+           padding: 5rem 0 3rem;
            text-align: center;
        }
    
        .post-footer .author {
-           margin: 0 0 2rem 0;
-           padding: 0 0 1.6rem 0;
+           margin: 0 0 2rem;
+           padding: 0 0 1.6rem;
            border-bottom: #EBF2F6 1px dashed;
        }
    
@@ -2040,7 +2040,7 @@
        }
    
        .post-footer .share a {
-           margin: 1.4rem 0.8rem 0 0.8rem;
+           margin: 1.4rem 0.8rem 0;
        }
    
        .author-meta li {
