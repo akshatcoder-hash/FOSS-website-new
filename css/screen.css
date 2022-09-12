@@ -1643,94 +1643,194 @@
        opacity: 0.7;
        color: rgba(255,255,255,0.7);
    }
-   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-   .smh{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    place-items: center;
-    background: #0b2230;   }
-   .wrapper {
-                display: inline-flex;
-                list-style: none;
-   }
-   .wrapper .icon{
-    position: relative;
-    background: #ffffff;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-   }
-   .wrapper .tooltip{
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    footer{
+        position: fixed;
+        bottom: 0;
     }
-    .wrapper .tooltip::before{
-        position: absolute;
-        content: "";
-        height: 8px;
-        width: 8px;
-        background: #ffffff;
-        bottom: -3px;
-        left: 50%;
-        transform: translate(-50%) rotate(45deg);
-        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    @media (max-height:800px){
+        footer { position: static; }
+        header { padding-top:40px; }
     }
-    .wrapper .icon:hover .tooltip{
-        top: -45px;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    
+    
+    .footer-distributed{
+        background-color: #2c292f;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 50px 50px 60px 50px;
+        margin-top: 20px;
     }
-    .wrapper .icon:hover a,
-    .wrapper .icon:hover .tooltip{
-        text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+    
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: inline-block;
+        vertical-align: top;
     }
-    .wrapper .twitter:hover,
-    .wrapper .twitter:hover .tooltip,
-    .wrapper .twitter:hover .tooltip::before{
-        background: #1DA1F2;
+    
+    .footer-distributed .footer-left{
+        width: 30%;
+    }
+    
+    .footer-distributed h3{
+        color:  #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0;
+    }
+    
+    .footer-distributed .footer-left img{
+        width: 30%;
+        margin-top: -38px;
+    }
+    
+    .footer-distributed h3 span{
+        color: #00FF00;
+    }
+    
+    .footer-distributed .footer-links{
+        color:  #ffffff;
+        margin: 20px 0 12px;
+    }
+    
+    .footer-distributed .footer-links a{
+        display:inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color:  inherit;
+
+    }
+    .footer-distributed .footer-links a:hover{
+        color: #00FF00;
+    }
+    
+    .footer-distributed .footer-slogan{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer-distributed .footer-center{
+        width: 35%;
+    }
+    
+    
+    .footer-distributed .footer-center i{
+        background-color:  #33383b;
         color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
     }
-    .wrapper .instagram:hover,
-    .wrapper .instagram:hover .tooltip,
-    .wrapper .instagram:hover .tooltip::before{
-        background:#E4405F;
+    
+    .footer-distributed .footer-center i.fa-envelope{
+        font-size: 17px;
+        line-height: 38px;
+    }
+    
+    .footer-distributed .footer-center p{
+        display: inline-block;
         color: #ffffff;
+        vertical-align: middle;
+        margin:0;
     }
-    .wrapper .github:hover,
-    .wrapper .github:hover .tooltip,
-    .wrapper .github:hover .tooltip::before{
-        background: #333333;
+    
+    .footer-distributed .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size:14px;
+        line-height:2;
+    }
+    
+    .footer-distributed .footer-center p a{
+        color:  #00FF00;
+        text-decoration: none;;
+    }
+    
+    .footer-distributed .footer-right{
+        width: 30%;
+    }
+    
+    .footer-distributed .footer-company-about{
+        line-height: 20px;
+        color:  #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer-distributed .footer-company-about span{
+        display: block;
+        color:  #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .footer-distributed .footer-icons{
+        margin-top: 25px;
+    }
+    
+    .footer-distributed .footer-icons a{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color:  #33383b;
+        border-radius: 2px;
+    
+        font-size: 20px;
         color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+    
+        margin-right: 3px;
+        margin-bottom: 5px;
     }
-    .wrapper .linkedin-square:hover,
-    .wrapper .linkedin-square:hover .tooltip,
-    .wrapper .linkedin-square:hover .tooltip::before{
-        background: cornflowerblue;
-        color: #ffffff;
+    .footer-distributed .footer-right .footer-company-about .abt:hover{
+                color: #00FF00;
+                cursor: pointer;
+                text-decoration: underline;
     }
-   
+    .footer-distributed .footer-icons .twitter:hover{
+        background: #2FA7DC;
+    }
+    .footer-distributed .footer-icons .insta:hover{
+        background: rgb(198, 31, 31);
+    }
+    .footer-distributed .footer-icons .linkedin:hover{
+        background: #105a7a;
+    }
+    .footer-distributed .footer-icons .github:hover{
+        background: #222;
+    }  
+    
+    @media (max-width: 880px) {
+    
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+    
+    }
+    
    /* ==========================================================================
       10. Media Queries - Smaller than 900px
       ========================================================================== */
