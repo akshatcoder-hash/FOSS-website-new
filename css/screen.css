@@ -294,7 +294,7 @@
        padding: 0;
        -moz-box-sizing: content-box;
        box-sizing: content-box;
-       height: 0;
+       /*height: 0;*/
    }
    
    blockquote {
@@ -326,7 +326,7 @@
    blockquote cite a { font-weight: normal; }
    
    mark {
-       background-color: #FFC336;
+       /*background-color: #FFC336;*/
        background: #FF0; 
        color: #000; 
    }
@@ -1993,7 +1993,7 @@
        h2 {
            font-size: 2.4rem;
            letter-spacing: 0;
-           margin: 1em 0 1em;
+           margin: 1em 0;
        }
    
        h3 {
