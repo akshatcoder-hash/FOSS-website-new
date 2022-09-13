@@ -1674,11 +1674,12 @@
     
     .footer-distributed .footer-left{
         width: 30%;
+        font-family: 'Roboto Slab', serif;
     }
     
     .footer-distributed h3{
         color:  #ffffff;
-        font: normal 36px 'Cookie', cursive;
+        /* font: normal 36px 'Cookie', cursive; */
         margin: 0;
     }
     
